@@ -2,6 +2,7 @@ import Link from 'next/link';
 import {notFound} from 'next/navigation';
 import {HeroDemo} from '@/components/HeroDemo';
 import {IndustryTabs} from '@/components/IndustryTabs';
+import {PricingCards} from '@/components/PricingCards';
 import {getCopy,isLocale} from '@/lib/i18n';
 import styles from './home.module.css';
 
@@ -191,7 +192,7 @@ export default async function Home({params}:{params:Promise<{locale:string}>}) {
       <div className="container">
         <div className="eyebrow">{c.pricing.eyebrow}</div>
         <h2 className="h2">{c.pricing.title}</h2>
-        <div className="plans">{c.pricing.plans.map(([t,b,f])=><article className="plan" key={t}><h3>{t}</h3><p>{b}</p><div className="features">{f}</div></article>)}</div>
+        <PricingCards plans={c.pricing.plans}/>
         <p className="small" style={{marginTop:20}}>{c.pricing.note}</p>
         <div className="btnrow"><Link className="btn" href={`/${locale}/pricing`}>{c.common.learnMore} →</Link><Link className="btn primary" href={`/${locale}/demo`}>{c.pricing.cta}</Link></div>
       </div>
