@@ -4,6 +4,8 @@
 .demoProgress{display:flex;gap:6px;margin-bottom:16px}
 .barTrack{flex:1;height:4px;background:#e3eaee;border-radius:4px;overflow:hidden}
 .barFill{height:100%;width:0;background:#102d43;border-radius:4px}
+.barFill.active{animation:demoProgressFill 3400ms linear both}
+@keyframes demoProgressFill{from{width:0}to{width:100%}}
 .demoStage{position:relative;height:264px;background:#fbfcfd;border:1px solid rgba(16,45,67,.1);border-radius:16px;overflow:hidden}
 .demoScene{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .5s ease;padding:20px}
 .demoScene.active{opacity:1}
@@ -37,6 +39,8 @@
 .h3{font-size:clamp(20px,2.4vw,26px);line-height:1.2;letter-spacing:-.02em;margin:0 0 10px}
 .docsSection{margin-top:52px;padding-top:36px;border-top:1px solid rgba(16,45,67,.12)}
 .docsSection:first-of-type{margin-top:36px}
+.privacyPolicy .docsSection p,.legalPolicy .docsSection p{line-height:1.75;color:#536472}
+.privacyPolicy .small a,.legalPolicy .small a{text-decoration:underline;text-underline-offset:3px}
 .errorCode{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:700;color:#1f4f74;min-width:64px;display:inline-block}
 .blue{color:#75bde9}
 .pricing5{grid-template-columns:repeat(5,1fr)}
@@ -47,3 +51,71 @@
 .plan p{margin-top:12px;color:#536472;font-size:14px;line-height:1.5}
 @media(max-width:1100px){.pricing5{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:640px){.pricing5{grid-template-columns:1fr}}.small{font-size:12px;color:#77848e;line-height:1.6}.pilot{background:#f5f8fa}.final{padding:82px 0;background:#102d43;color:#fff}.final .lead{color:#cdd9e0}.industryWrap{margin-top:28px}.tabRow{display:flex;gap:10px;flex-wrap:wrap}.tabRow button{border:1px solid rgba(16,45,67,.12);background:#fff;border-radius:999px;padding:10px 14px;cursor:pointer}.tabRow .activeTab{background:#102d43;color:#fff}.industryCard{margin-top:16px;padding:26px;border:1px solid rgba(16,45,67,.12);border-radius:20px}.industryFlow{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.industryFlow span{padding:8px 10px;border-radius:10px;background:#f3f6f8;font-size:12px;font-weight:700}.demoForm{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}.demoForm label{display:grid;gap:7px;font-weight:700;font-size:13px}.demoForm input,.demoForm select,.demoForm textarea{width:100%;border:1px solid rgba(16,45,67,.12);border-radius:10px;padding:12px;background:#fff}.fullField{grid-column:1/-1}.siteFooter{border-top:1px solid rgba(16,45,67,.12);padding:36px 0;background:#fbfcfd}.footerGrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}.footerGrid>div{display:grid;gap:8px;align-content:start}.footerGrid p{margin:0;color:#6f7d87}@media(max-width:900px){.hero-grid,.security-grid{grid-template-columns:1fr}.mainNav{display:none}.stripgrid,.editorial,.plans,.simpleGrid{grid-template-columns:1fr 1fr}}@media(max-width:640px){.hero{padding-top:58px}.stripgrid,.editorial,.plans,.simpleGrid,.demoForm{grid-template-columns:1fr}.stripitem{border-right:0;border-bottom:1px solid rgba(16,45,67,.12)}.demoFields{grid-template-columns:1fr}.fullField{grid-column:auto}}
+
+/* Let translated text and grid children shrink within the available space. */
+body { overflow-wrap: anywhere; }
+.headerInner > .brand { flex-shrink: 0; }
+.mainNav { min-width: 0; flex-wrap: wrap; row-gap: 8px; }
+.container.narrow { width: min(860px, calc(100% - 36px)); }
+.hero-grid > *, .security-grid > *, .stripgrid > *, .editorial > *,
+.plans > *, .simpleGrid > *, .demoForm > *, .security-list > div > * {
+  min-width: 0;
+}
+.btn, .tabRow button, .industryFlow span { max-width: 100%; }
+.btn { padding-block: 12px; text-align: center; color: #102d43; }
+.demoForm input, .demoForm select, .demoForm textarea { min-width: 0; }
+.codebox { min-width: 0; overflow-wrap: anywhere; }
+.upDrop, .scanWrap, .fieldsDemo, .exportDemo { max-width: 100%; }
+.fRow { gap: 8px; }
+.fRow > div { min-width: 0; }
+.exportIcons { max-width: 100%; }
+.exportIcons .chip { min-width: 0; }
+.stepLabel { min-width: 0; }
+
+/* A compact brand row and a quiet legal row, with room to wrap. */
+.footerTop, .footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.footerBrand { min-width: 0; max-width: 360px; }
+.footerLogo { display: inline-flex; }
+.footerLogo img { display: block; max-width: 100%; }
+.footerBrand p { margin: 12px 0 0; color: #6f7d87; font-size: 14px; line-height: 1.6; }
+.footerLinks, .footerLegal { display: flex; flex-wrap: wrap; gap: 8px 24px; min-width: 0; }
+.footerLinks { font-size: 14px; font-weight: 650; }
+.footerBottom {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(16,45,67,.1);
+  color: #60707d;
+  font-size: 12px;
+}
+.footerCopyright { flex-shrink: 0; }
+.footerContent nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.footerContent a:hover { color: #0f8fa0; }
+.footerContent a:focus-visible { outline: 2px solid #0f8fa0; outline-offset: 4px; border-radius: 4px; }
+
+@media (max-width: 900px) {
+  .headerInner { justify-content: space-between; gap: 16px; }
+  .localeNav { flex-shrink: 0; }
+}
+
+@media (max-width: 640px) {
+  .display, .smallDisplay { font-size: clamp(32px, 9vw, 44px); line-height: 1.08; }
+  .h2 { font-size: clamp(27px, 7.5vw, 36px); line-height: 1.12; }
+  .hero { padding: 42px 0 48px; }
+  .section, .final { padding: 48px 0; }
+  .lead { font-size: 16px; }
+  .hero-grid { gap: 32px; }
+  .heroDemo { padding: 16px; border-radius: 20px; }
+  .demoScene { padding: 16px; }
+  .demoCaptionRow { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 12px; }
+  .demoCaptionRow .stepLabel { font-size: 11px; line-height: 1.4; }
+  .industryCard, .codebox { padding: 18px; }
+  .footerTop, .footerBottom { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .footerBrand { max-width: 32ch; }
+  .footerBottom { margin-top: 20px; padding-top: 16px; }
+  .footerLegal { flex-direction: column; gap: 0; }
+}

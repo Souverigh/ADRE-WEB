@@ -39,7 +39,7 @@ const RECOGNIZE_RESPONSE = `{
   "documentType": "Справка",
   "text": "...",
   "fields": [
-    { "label": "ФИО", "value": "Иванов Иван", "confidence": 97 },
+    { "label": "ФИО", "value": "Асанов Азамат", "confidence": 97 },
     { "label": "Дата выдачи", "value": "01.03.2026", "confidence": 92 }
   ],
   "items": [],

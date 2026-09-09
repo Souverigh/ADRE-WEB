@@ -25,7 +25,7 @@ export function HeroDemo({copy}:{copy:DemoCopy}) {
     <div className="demoChrome"><span/><span/><span/></div>
     <div className="demoProgress">
       {copy.steps.map((_,i)=><div className="barTrack" key={i}>
-        <div className="barFill" style={active===i?{width:'100%',transition:'width 3400ms linear'}:{width:i<active?'100%':'0%',transition:'none'}}/>
+        <div className={`barFill${active===i?' active':''}`} style={{width:i<=active?'100%':'0%'}}/>
       </div>)}
     </div>
     <div className="demoStage">

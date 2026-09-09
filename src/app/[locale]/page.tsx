@@ -10,7 +10,7 @@ export default async function Home({params}:{params:Promise<{locale:string}>}) {
   const {locale}=await params;
   if(!isLocale(locale)) notFound();
   const c=getCopy(locale);
-  const app=process.env.NEXT_PUBLIC_APP_URL||'https://tamga-souverigh.vercel.app';
+  const app=process.env.NEXT_PUBLIC_APP_URL||'https://adre-cloud.app';
 
   return <main>
     <section className={`hero ${styles.hero}`}>

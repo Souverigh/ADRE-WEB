@@ -25,13 +25,27 @@ export default async function LocaleLayout({children,params}:{children:React.Rea
     </header>
     {children}
     <footer className="siteFooter">
-      <div className="container footerGrid">
-        <div>
-          <Image src="/adre-icon.png" alt="ADRE" width={28} height={28} style={{height:26,width:'auto',marginBottom:8}}/>
-          <p>{c.footer.tagline}</p>
+      <div className="container footerContent">
+        <div className="footerTop">
+          <div className="footerBrand">
+            <Link href={`/${locale}`} className="footerLogo">
+              <Image src="/adre-logo.png" alt="ADRE" width={140} height={42} style={{height:32,width:'auto'}}/>
+            </Link>
+            <p>{c.footer.tagline}</p>
+          </div>
+          <nav className="footerLinks">
+            <Link href={`/${locale}/about`}>{c.footer.about}</Link>
+            <Link href={`/${locale}/contact`}>{c.footer.contact}</Link>
+          </nav>
         </div>
-        <div><Link href={`/${locale}/about`}>{c.footer.about}</Link><Link href={`/${locale}/contact`}>{c.footer.contact}</Link></div>
-        <div><Link href={`/${locale}/privacy`}>{c.footer.privacy}</Link><Link href={`/${locale}/terms`}>{c.footer.terms}</Link><Link href={`/${locale}/data-processing`}>{c.footer.data}</Link></div>
+        <div className="footerBottom">
+          <span className="footerCopyright">© ADRE</span>
+          <nav className="footerLegal">
+            <Link href={`/${locale}/privacy`}>{c.footer.privacy}</Link>
+            <Link href={`/${locale}/terms`}>{c.footer.terms}</Link>
+            <Link href={`/${locale}/data-processing`}>{c.footer.data}</Link>
+          </nav>
+        </div>
       </div>
     </footer>
   </>;
