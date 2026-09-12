@@ -32,4 +32,4 @@ npm run check
 - RU / KG / EN localization
 - Animated 4-step "how it works" demo on the hero section
 
-The standalone demo form is visual only. Connect it to your existing Telegram/email backend before production.
+The demo form sends requests through the server to `info@adre-cloud.app` and the configured Telegram bot. Keep delivery credentials in `.env.local` and set `TELEGRAM_CHAT_ID` to the personal chat or group that should receive notifications.
