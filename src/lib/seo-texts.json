@@ -1,0 +1,156 @@
+{
+  "home": {
+    "ru": {
+      "title": "АДРЕ - понимает документы, а не просто распознает текст",
+      "description": "Интеллектуальная обработка документов для Кыргызстана и СНГ: определяет тип документа, извлекает данные, проверяет ошибки. Счета, накладные, договоры - из фото или PDF."
+    },
+    "kg": {
+      "title": "АДРЕ - документтерди түшүнөт, жөн гана окубайт",
+      "description": "Кыргызстан жана КМШ үчүн документтерди интеллектуалдык иштетүү: түрүн аныктайт, маалыматтарды таап, каталарды текшерет. Эсептер, накладнойлор, келишимдер."
+    },
+    "en": {
+      "title": "ADRE - Understands Documents, Not Just Reads Text",
+      "description": "Intelligent document processing for Kyrgyzstan and CIS: classifies document type, extracts structured data, checks errors. Invoices, waybills, contracts - from photo or PDF."
+    }
+  },
+  "platform": {
+    "ru": {
+      "title": "Платформа АДРЕ - как работает обработка документов",
+      "description": "Автоматическое определение типа документа, извлечение полей и таблиц, оценка уверенности, проверка ошибок и пакетная обработка документов в АДРЕ."
+    },
+    "kg": {
+      "title": "АДРЕ платформасы - документтерди иштетүү",
+      "description": "Документтин түрүн автоматтык аныктоо, маалыматтарды алуу, ишеним баасы, каталарды текшерүү жана документтерди топтук иштетүү."
+    },
+    "en": {
+      "title": "ADRE Platform - How Document Processing Works",
+      "description": "Explore ADRE document processing: automatic classification, structured field and table extraction, confidence scores, error checks and batch processing."
+    }
+  },
+  "pricing": {
+    "ru": {
+      "title": "Тарифы АДРЕ - стоимость обработки документов",
+      "description": "Тарифы АДРЕ зависят от объема документов и уровня интеграции. Обработка счетов, накладных и договоров для бизнеса в Кыргызстане и СНГ."
+    },
+    "kg": {
+      "title": "АДРЕ тарифтери - документ иштетүү баасы",
+      "description": "АДРЕ тарифтери документтердин көлөмүнө жараша. Кыргызстан жана КМШ бизнеси үчүн эсептерди жана накладнойлорду иштетүү."
+    },
+    "en": {
+      "title": "ADRE Pricing - Document Processing Plans",
+      "description": "ADRE pricing depends on document volume and integration level. Invoice and contract processing for businesses in Kyrgyzstan and CIS."
+    }
+  },
+  "demo": {
+    "ru": {
+      "title": "Демо АДРЕ - покажите ваш процесс работы с документами",
+      "description": "Расскажите, какие документы обрабатывает ваша команда, - покажем, как АДРЕ ускорит работу. Заявка на персональное демо."
+    },
+    "kg": {
+      "title": "АДРЕ демо - иштөө процессиңизди көрсөтүңүз",
+      "description": "Командаңыз кайсы документтерди иштетерин айтыңыз - АДРЕ ишти кантип тездетээрин көрсөтөбүз. Жеке демо үчүн өтүнмө."
+    },
+    "en": {
+      "title": "ADRE Demo - Show Us Your Document Workflow",
+      "description": "Tell us which documents your team processes - we will show how ADRE speeds it up. Request a personal demo."
+    }
+  },
+  "security": {
+    "ru": {
+      "title": "Безопасность АДРЕ - защита и обработка данных",
+      "description": "Узнайте об обработке документов в АДРЕ, маскировании чувствительных полей и вопросах защиты данных, которые нужно согласовать перед подключением."
+    },
+    "kg": {
+      "title": "АДРЕ коопсуздугу - маалыматтарды коргоо",
+      "description": "АДРЕде документтерди иштетүү, сезимтал талааларды жашыруу жана туташтыруудан мурда тактала турган маалыматтарды коргоо маселелери."
+    },
+    "en": {
+      "title": "ADRE Security - Data Protection",
+      "description": "Learn about document processing at ADRE, sensitive field masking and the data protection questions to clarify before connecting your team to the service."
+    }
+  },
+  "developers": {
+    "ru": {
+      "title": "API АДРЕ - документация для разработчиков",
+      "description": "Публичный REST API: классификация документов, извлечение структурированных данных, пакетная обработка с вебхуком. Документация и примеры."
+    },
+    "kg": {
+      "title": "АДРЕ API - иштеп чыгуучулар үчүн",
+      "description": "Ачык REST API: документтерди классификациялоо, маалыматтарды алуу, вебхук менен топтук иштетүү. Документ жана мисалдар."
+    },
+    "en": {
+      "title": "ADRE API - Documentation for Developers",
+      "description": "Public REST API: document classification, structured data extraction, batch processing with webhooks. Docs and examples."
+    }
+  },
+  "about": {
+    "ru": {
+      "title": "О компании АДРЕ - документы для бизнеса в Кыргызстане",
+      "description": "АДРЕ - платформа интеллектуальной обработки документов для бизнеса в Кыргызстане и СНГ. Фото и сканы превращаются в проверенные данные."
+    },
+    "kg": {
+      "title": "АДРЕ жөнүндө - Кыргызстан бизнеси үчүн",
+      "description": "АДРЕ - Кыргызстан жана КМШ бизнеси үчүн документтерди интеллектуалдык иштетүү платформасы. Сүрөт жана скандар текшерилген маалыматка айланат."
+    },
+    "en": {
+      "title": "About ADRE - Documents for Business in Kyrgyzstan",
+      "description": "ADRE is an intelligent document processing platform for businesses in Kyrgyzstan and CIS. Photos and scans become verified data."
+    }
+  },
+  "contact": {
+    "ru": {
+      "title": "Контакты АДРЕ - связаться с нами",
+      "description": "Свяжитесь с командой АДРЕ: вопросы о платформе, тарифах, демо и интеграции."
+    },
+    "kg": {
+      "title": "Байланыш - АДРЕ командасы",
+      "description": "АДРЕ командасы менен байланышыңыз: платформа, тарифтер, демо жана интеграция боюнча суроолор."
+    },
+    "en": {
+      "title": "Contact ADRE - Get in Touch",
+      "description": "Contact the ADRE team: questions about the platform, pricing, demo and integration."
+    }
+  },
+  "data-processing": {
+    "ru": {
+      "title": "Обработка данных в АДРЕ - как это устроено",
+      "description": "Как АДРЕ обрабатывает данные документов: извлечение, проверка, хранение и удаление. Прозрачные правила работы с вашими документами."
+    },
+    "kg": {
+      "title": "АДРЕде маалыматтарды иштетүү",
+      "description": "АДРЕ документ маалыматтарын кантип иштетет: алуу, текшерүү, сактоо жана өчүрүү. Ачык эрежелер."
+    },
+    "en": {
+      "title": "Data Processing at ADRE - How It Works",
+      "description": "How ADRE processes document data: extraction, verification, storage and deletion. Transparent rules."
+    }
+  },
+  "privacy": {
+    "ru": {
+      "title": "Политика конфиденциальности АДРЕ",
+      "description": "Какие данные собирает АДРЕ, как хранит и защищает. Правила конфиденциальности сервиса обработки документов."
+    },
+    "kg": {
+      "title": "АДРЕ купуялык саясаты",
+      "description": "АДРЕ кайсы маалыматтарды чогултат, кантип сактайт жана коргойт. Купуялык эрежелери."
+    },
+    "en": {
+      "title": "ADRE Privacy Policy",
+      "description": "What data ADRE collects, how it stores and protects it. Privacy rules of the document processing service."
+    }
+  },
+  "terms": {
+    "ru": {
+      "title": "Условия использования АДРЕ",
+      "description": "Правила использования платформы АДРЕ - сервиса обработки документов для бизнеса в Кыргызстане и СНГ."
+    },
+    "kg": {
+      "title": "АДРЕ колдонуу шарттары",
+      "description": "АДРЕ платформасын колдонуу эрежелери - Кыргызстан жана КМШ бизнеси үчүн документ иштетүү сервиси."
+    },
+    "en": {
+      "title": "ADRE Terms of Use",
+      "description": "Terms of use for the ADRE platform - document processing service for businesses in Kyrgyzstan and CIS."
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import {pageMetadata} from '@/lib/seo';
 import Link from 'next/link';
 import {notFound} from 'next/navigation';
 import {getCopy,isLocale} from '@/lib/i18n';
@@ -19,4 +20,8 @@ export default async function Page({params}:{params:Promise<{locale:string}>}) {
       <Link className="btn primary" href={`/${locale}/demo`}>{c.pricing.cta}</Link>
     </div>
   </div></section></main>;
+}
+
+export async function generateMetadata({params}:{params:Promise<{locale:string}>}) {
+  return pageMetadata((await params).locale, 'pricing');
 }

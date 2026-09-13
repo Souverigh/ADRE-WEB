@@ -1,3 +1,4 @@
+import {pageMetadata} from '@/lib/seo';
 import {notFound} from 'next/navigation';
 import {getCopy,isLocale} from '@/lib/i18n';
 import Link from 'next/link';
@@ -18,4 +19,8 @@ export default async function Page({params}:{params:Promise<{locale:string}>}) {
     <p className="small"><a href="https://reestr.dpa.gov.kg/ru/npa/59">{p.sourceLabel}</a></p>
     <div className="btnrow"><Link className="btn" href={`/${locale}`}>← {c.common.back}</Link></div>
   </div></article></main>;
+}
+
+export async function generateMetadata({params}:{params:Promise<{locale:string}>}) {
+  return pageMetadata((await params).locale, 'privacy');
 }

@@ -9,6 +9,7 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "check:localization": "node scripts/check-localization.mjs",
+    "check:seo": "node scripts/check-seo.mjs",
     "check": "npm run check:localization && npm run typecheck && npm run build"
   },
   "dependencies": {

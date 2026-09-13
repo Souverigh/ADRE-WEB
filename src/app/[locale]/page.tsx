@@ -1,3 +1,4 @@
+import {pageMetadata} from '@/lib/seo';
 import Link from 'next/link';
 import {notFound} from 'next/navigation';
 import {HeroDemo} from '@/components/HeroDemo';
@@ -215,4 +216,8 @@ export default async function Home({params}:{params:Promise<{locale:string}>}) {
       </div>
     </section>
   </main>;
+}
+
+export async function generateMetadata({params}:{params:Promise<{locale:string}>}) {
+  return pageMetadata((await params).locale, 'home');
 }

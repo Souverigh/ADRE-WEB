@@ -1,3 +1,4 @@
+import {pageMetadata} from '@/lib/seo';
 import {notFound} from 'next/navigation';
 import {getCopy,isLocale} from '@/lib/i18n';
 import Link from 'next/link';
@@ -37,4 +38,8 @@ export default async function Page({params}:{params:Promise<{locale:string}>}) {
       </div>
     </section>
   </div></section></main>;
+}
+
+export async function generateMetadata({params}:{params:Promise<{locale:string}>}) {
+  return pageMetadata((await params).locale, 'contact');
 }

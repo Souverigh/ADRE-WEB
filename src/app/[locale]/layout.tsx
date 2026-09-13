@@ -1,13 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import {notFound} from 'next/navigation';
-import {getCopy,isLocale} from '@/lib/i18n';
+import {getCopy,isLocale,locales} from '@/lib/i18n';
+import {languageCodes} from '@/lib/seo';
+import '../globals.css';
+
+export function generateStaticParams() {
+  return locales.map(locale => ({locale}));
+}
 
 export default async function LocaleLayout({children,params}:{children:React.ReactNode;params:Promise<{locale:string}>}) {
   const {locale}=await params;
   if(!isLocale(locale)) notFound();
   const c=getCopy(locale);
-  return <>
+  return <html lang={languageCodes[locale]}><body>
     <header className="siteHeader">
       <div className="container headerInner">
         <Link href={`/${locale}`} className="brand">
@@ -48,5 +54,5 @@ export default async function LocaleLayout({children,params}:{children:React.Rea
         </div>
       </div>
     </footer>
-  </>;
+  </body></html>;
 }
