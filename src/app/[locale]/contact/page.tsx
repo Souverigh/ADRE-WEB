@@ -1,6 +1,7 @@
 import {pageMetadata} from '@/lib/seo';
 import {notFound} from 'next/navigation';
 import {getCopy,isLocale} from '@/lib/i18n';
+import {contactRegion} from '@/lib/contact-region';
 import Link from 'next/link';
 import styles from './contact.module.css';
 
@@ -9,6 +10,7 @@ export default async function Page({params}:{params:Promise<{locale:string}>}) {
   if(!isLocale(locale)) notFound();
   const c=getCopy(locale);
   const p=c.pages.contact;
+  const region=contactRegion[locale];
   return <main><section className="section"><div className="container narrow">
     <div className="eyebrow">{p.eyebrow}</div>
     <h1 className="display smallDisplay">{p.title}</h1>
@@ -29,6 +31,11 @@ export default async function Page({params}:{params:Promise<{locale:string}>}) {
         <span className={styles.note}>{p.phoneNote}</span>
       </a>
     </address>
+    <section className={styles.request} aria-labelledby="service-area">
+      <h2 id="service-area" className="h3">{region.title}</h2>
+      <p><strong>{region.region}</strong></p>
+      <p>{region.description}</p>
+    </section>
     <section className={styles.request}>
       <h2 className="h3">{p.requestTitle}</h2>
       <p>{p.requestBody}</p>
