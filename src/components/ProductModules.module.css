@@ -1,0 +1,23 @@
+.section { background: #f3f7fa; scroll-margin-top: 100px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 32px; align-items: start; }
+.card { min-width: 0; padding: 30px; background: #fff; border: 1px solid rgba(18,47,73,.14); border-radius: 24px; scroll-margin-top: 100px; overflow-wrap: anywhere; }
+.card h3 { margin: 0 0 14px; font-size: 28px; color: #102d43; }
+.description { margin: 0; font-size: 17px; line-height: 1.65; color: #4c6070; }
+.highlights { padding-left: 22px; margin: 24px 0; font-size: 16px; line-height: 1.65; }
+.highlights li + li { margin-top: 10px; }
+.highlights li::marker { color: #1f4f74; }
+.details { border-top: 1px solid rgba(18,47,73,.14); }
+.details summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 20px; cursor: pointer; font-size: 16px; font-weight: 700; color: #1f4f74; list-style: none; }
+.details summary::-webkit-details-marker { display: none; }
+.details summary:focus-visible { outline: 3px solid #2971a3; outline-offset: 6px; border-radius: 4px; }
+.toggle { font-size: 24px; line-height: 1; flex: 0 0 auto; }
+.details[open] .toggle { transform: rotate(45deg); }
+.content { padding-top: 24px; font-size: 16px; line-height: 1.65; }
+.content h4, .content dt { font-size: 16px; font-weight: 700; color: #102d43; margin: 0 0 5px; }
+.content p, .content dd { margin: 0; color: #4c6070; }
+.content dl { margin: 24px 0 0; }
+.content dl > div + div { margin-top: 20px; }
+@media (max-width: 760px) {
+  .grid { grid-template-columns: minmax(0, 1fr); }
+  .card { padding: 22px; border-radius: 18px; }
+}

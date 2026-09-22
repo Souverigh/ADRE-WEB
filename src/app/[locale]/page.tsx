@@ -4,6 +4,7 @@ import {notFound} from 'next/navigation';
 import {HeroDemo} from '@/components/HeroDemo';
 import {IndustryTabs} from '@/components/IndustryTabs';
 import {PricingCards} from '@/components/PricingCards';
+import {ProductModules} from '@/components/ProductModules';
 import {getCopy,isLocale} from '@/lib/i18n';
 import styles from './home.module.css';
 
@@ -33,6 +34,8 @@ export default async function Home({params}:{params:Promise<{locale:string}>}) {
     <section className="strip">
       <div className="container stripgrid">{c.proof.items.map(([t,b])=><div className="stripitem" key={t}><strong>{t}</strong><span>{b}</span></div>)}</div>
     </section>
+
+    <ProductModules locale={locale}/>
 
     <section className="section">
       <div className="container">
