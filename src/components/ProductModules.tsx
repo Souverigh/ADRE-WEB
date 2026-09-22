@@ -1,4 +1,5 @@
-import type {Locale} from '@/lib/i18n';
+import Link from 'next/link';
+import {getCopy, type Locale} from '@/lib/i18n';
 import {modulesCopy} from '@/lib/modules';
 import styles from './ProductModules.module.css';
 
@@ -22,6 +23,7 @@ export function ProductModules({locale}: {locale: Locale}) {
               <dl>{module.features.map(([title, body]) => <div key={title}><dt>{title}</dt><dd>{body}</dd></div>)}</dl>
             </div>
           </details>
+          <div className="btnrow"><Link className="btn" href={`/${locale}/${module.id}`}>{getCopy(locale).common.learnMore}</Link></div>
         </article>)}
       </div>
     </div>

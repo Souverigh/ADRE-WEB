@@ -1,16 +1,16 @@
 {
   "home": {
     "ru": {
-      "title": "АДРЕ - понимает документы, а не просто распознает текст",
-      "description": "Интеллектуальная обработка документов для Кыргызстана и СНГ: определяет тип документа, извлекает данные, проверяет ошибки. Счета, накладные, договоры - из фото или PDF."
+      "title": "ADRE - распознавание и перевод документов в Кыргызстане",
+      "description": "Распознавайте документы, проверяйте ЭСФ, накладные, акты и платёжные поручения. Переводите паспорта и справки с сохранением структуры. Экспорт в Excel, DOCX и PDF."
     },
     "kg": {
-      "title": "АДРЕ - документтерди түшүнөт, жөн гана окубайт",
-      "description": "Кыргызстан жана КМШ үчүн документтерди интеллектуалдык иштетүү: түрүн аныктайт, маалыматтарды таап, каталарды текшерет. Эсептер, накладнойлор, келишимдер."
+      "title": "ADRE - Кыргызстанда документтерди таануу жана которуу",
+      "description": "Документтерди таанып, ЭСФ, накладной, акт жана төлөм тапшырмаларын текшериңиз. Паспортторду жана маалымкаттарды түзүмүн сактап которуңуз. Excel, DOCX жана PDF."
     },
     "en": {
-      "title": "ADRE - Understands Documents, Not Just Reads Text",
-      "description": "Intelligent document processing for Kyrgyzstan and CIS: classifies document type, extracts structured data, checks errors. Invoices, waybills, contracts - from photo or PDF."
+      "title": "ADRE - Document Recognition and Translation in Kyrgyzstan",
+      "description": "Extract and review invoices, delivery notes and payment orders. Translate passports and certificates while preserving structure. Export to Excel, DOCX and PDF."
     }
   },
   "platform": {
@@ -151,6 +151,34 @@
     "en": {
       "title": "ADRE Terms of Use",
       "description": "Terms of use for the ADRE platform - document processing service for businesses in Kyrgyzstan and CIS."
+    }
+  },
+  "accounting": {
+    "ru": {
+      "title": "Бухгалтерия ADRE - распознавание ЭСФ и накладных",
+      "description": "Распознавание ЭСФ, накладных, актов и платёжных поручений. Проверка данных перед сохранением, пакетная загрузка и Excel для переноса в 1С и другие системы."
+    },
+    "kg": {
+      "title": "ADRE бухгалтериясы - ЭСФ жана накладнойлорду таануу",
+      "description": "ЭСФ, товардык коштомо кагаз, акт жана төлөм тапшырмаларынан маалымат алуу. Сактоодон мурун текшерүү, топтук жүктөө жана 1Ске өткөрүү үчүн Excel."
+    },
+    "en": {
+      "title": "ADRE Accounting - Invoice Recognition and Excel Export",
+      "description": "Extract electronic tax invoices, delivery notes, work certificates and payment orders. Review data before saving and export to Excel for transfer to 1C."
+    }
+  },
+  "translation": {
+    "ru": {
+      "title": "Перевод документов ADRE - паспорта, справки и апостили",
+      "description": "Перевод документов для переводчиков и бюро: сохранение структуры PDF, глоссарий ФИО, кыргызские юридические формулировки и экспорт в DOCX и PDF."
+    },
+    "kg": {
+      "title": "ADRE котормосу - паспорттор, маалымкаттар жана апостилдер",
+      "description": "Котормочулар жана бюролор үчүн документ которуу: PDF түзүмүн сактоо, аты-жөндөр сөздүгү, кыргызча юридикалык сөз айкаштары. DOCX жана PDF форматына чыгаруу."
+    },
+    "en": {
+      "title": "ADRE Document Translation - Passports and Apostilles",
+      "description": "Document translation for translators and agencies. Preserve PDF layouts, reuse confirmed names and Kyrgyz legal wording, and export to DOCX and PDF."
     }
   }
 }

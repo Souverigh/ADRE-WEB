@@ -43,7 +43,8 @@ The production canonical host is `https://www.adre-cloud.com`, matching the exis
 - `src/lib/seo-texts.json` contains page-specific titles and descriptions in all three languages, adapted from the supplied SEO texts.
 - `src/lib/seo.ts` supplies canonical URLs, reciprocal language alternates, Open Graph and Twitter metadata.
 - `/kg` remains the Kyrgyz URL; its standard HTML/hreflang language code is `ky`.
-- `src/app/sitemap.ts` generates all 33 canonical URLs with language alternates.
+- `src/app/sitemap.ts` generates all 39 canonical URLs with language alternates, including `/accounting` and `/translation` in RU/KY/EN.
+- The home page links to both module pages. Each has its own search and social metadata and reuses the complete localized module content.
 - `src/app/robots.ts` allows public pages and assets, excludes API crawling and points to the sitemap. Do not add conflicting copies in `public/`.
 - All localized pages are prerendered, including their metadata and content. `/` permanently redirects to `/ru`.
 - Sitemap dates are deliberately omitted rather than inventing modification dates on every build.
